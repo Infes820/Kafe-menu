@@ -1,0 +1,145 @@
+html {
+  background: #f3e5c8;
+}
+
+#arka-plan {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+#arka-plan.acik {
+  opacity: 1;
+}
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px;
+  background: transparent;
+}
+
+h1 {
+  background: #6f4e37;
+  color: white;
+  font-size: 24px;
+  padding: 10px 24px;
+  border-radius: 20px;
+  width: fit-content;
+  margin: 0 auto 16px auto;
+}
+
+#menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+#menu h2,
+#menu .urun {
+  flex-basis: 100%;
+}
+
+h2 {
+  border-bottom: 2px solid #6f4e37;
+  padding-bottom: 4px;
+}
+
+.urun {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+.kategori-kart {
+  background: #6f4e37;
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 5px);
+}
+.kategori-kart:active { opacity: 0.8; }
+
+.kategori-kart img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.kategori-kart span {
+  padding: 10px 8px;
+}
+.kategori-kart:active { opacity: 0.8; }
+
+#geri {
+  background: #6f4e37;
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+@keyframes asagidanYukari {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  animation: asagidanYukari 0.6s ease-out both;
+}
+
+.kategori-kart {
+  animation: asagidanYukari 0.6s ease-out both;
+}
+
+.kategori-kart:nth-child(1)  { animation-delay: 0.10s; }
+.kategori-kart:nth-child(2)  { animation-delay: 0.15s; }
+.kategori-kart:nth-child(3)  { animation-delay: 0.20s; }
+.kategori-kart:nth-child(4)  { animation-delay: 0.25s; }
+.kategori-kart:nth-child(5)  { animation-delay: 0.30s; }
+.kategori-kart:nth-child(6)  { animation-delay: 0.35s; }
+.kategori-kart:nth-child(7)  { animation-delay: 0.40s; }
+.kategori-kart:nth-child(8)  { animation-delay: 0.45s; }
+.kategori-kart:nth-child(9)  { animation-delay: 0.50s; }
+.kategori-kart:nth-child(10) { animation-delay: 0.55s; }
+.kategori-kart:nth-child(11) { animation-delay: 0.60s; }
+.kategori-kart:nth-child(12) { animation-delay: 0.65s; }
+.kategori-kart:nth-child(13) { animation-delay: 0.70s; }
+.kategori-kart:nth-child(14) { animation-delay: 0.75s; }
+#menu h2 {
+  animation: asagidanYukari 0.5s ease-out both;
+}
+
+#menu .urun {
+  animation: asagidanYukari 0.5s ease-out both;
+}
+
+#menu .urun:nth-child(2)  { animation-delay: 0.10s; }
+#menu .urun:nth-child(3)  { animation-delay: 0.15s; }
+#menu .urun:nth-child(4)  { animation-delay: 0.20s; }
+#menu .urun:nth-child(5)  { animation-delay: 0.25s; }
+#menu .urun:nth-child(6)  { animation-delay: 0.30s; }
+#menu .urun:nth-child(7)  { animation-delay: 0.35s; }
+#menu .urun:nth-child(8)  { animation-delay: 0.40s; }
+#menu .urun:nth-child(9)  { animation-delay: 0.45s; }
+#menu .urun:nth-child(10) { animation-delay: 0.50s; }
+#menu .urun:nth-child(11) { animation-delay: 0.55s; }
+#menu .urun:nth-child(12) { animation-delay: 0.60s; }
